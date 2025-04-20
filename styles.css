@@ -1,0 +1,327 @@
+body {
+  margin: 0;
+  background-color: #000;
+  color: #33ff33;
+  font-family: 'Fira Mono', monospace;
+}
+
+.terminal {
+  width: 95%;
+  margin: 50px auto;
+  background-color: #000;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.terminal-body {
+  min-height: 400px;
+  overflow-y: auto;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.input-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.prompt {
+  color: #33ff33;
+  margin-right: 5px;
+  line-height: 1.6;
+}
+
+input[type="text"] {
+  background: none;
+  border: none;
+  outline: none;
+  color: #33ff33;
+  font-family: 'Fira Mono', monospace;
+  font-size: 16px;
+  flex: 1;
+  padding: 5px 0;
+}
+
+.banner-container {
+  text-align: center;
+}
+
+.banner {
+  color: #33ff33;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+.username {
+  color: #00ffff;
+}
+
+.hostname {
+  color: #ff3399;
+}
+
+a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Banner section */
+.user {
+  color: #00ff00;
+}
+
+.at-symbol {
+  color: #ff00ff;
+}
+
+.system {
+  color: #00ffff;
+}
+
+.directory {
+  color: #ffff00;
+}
+
+.dev-message {
+  color: #ff5733;
+}
+
+.command-list {
+  list-style-type: square;
+  padding-left: 20px;
+  color: #e0e0e0;
+  font-size: 16px;
+}
+
+.command-list li {
+  margin: 8px 0;
+}
+
+.command {
+  color: #00ffff;
+  font-weight: bold;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.8s infinite;
+  color: #ffffff;
+}
+
+@keyframes blink {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.banner {
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  /* Increase this value to make text larger */
+  color: #00FF00;
+  /* Change text color if needed */
+  /* Add some spacing between lines */
+}
+
+.prompt-symbol {
+  font-size: 15px;
+  /* Larger size for symbols like ┌──$ */
+  color: #ffffff;
+}
+
+.user,
+.system,
+.directory,
+.dev-message {
+  font-size: 18px;
+  /* Increase the size of user/system/directory */
+  font-weight: bold;
+}
+
+.cursor {
+  font-size: 18px;
+  /* Cursor is usually bigger for emphasis */
+  color: #00FF00;
+  /* Optional: make the cursor green like the prompt */
+}
+
+.dev-message {
+  color: #FF6347;
+  /* Orange color for the developer message */
+  font-size: px;
+}
+
+/* Experience section */
+.highlight {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00FF00;
+  /* Bright green for role/company names */
+}
+
+.subtext {
+  font-size: 16px;
+  color: #FFFFFF;
+  /* White for secondary information */
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+ul li {
+  font-size: 15px;
+  color: #BBBBBB;
+  /* Light gray for list items */
+  line-height: 1.5;
+}
+
+.link {
+  color: #00BFFF;
+  /* Light blue color for the link */
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #FFFF00;
+  /* Change color to yellow on hover */
+}
+
+/* Cetifications table section */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid #4CAF50;
+  padding: 10px;
+  text-align: left;
+}
+
+.custom-table th {
+  background-color: #222;
+  color: #00FF41;
+}
+
+.custom-table td {
+  color: #ccc;
+}
+
+.table-link {
+  color: #00BFFF;
+  text-decoration: underline;
+}
+
+.table-link:hover {
+  color: #FFFF00;
+}
+
+/* Resume section */
+.resume-output {
+  margin-top: 20px;
+  color: #ccc;
+  font-size: 16px;
+}
+
+.resume-link {
+  color: #00BFFF;
+  text-decoration: none;
+}
+
+.resume-link:hover {
+  color: #FFFF00;
+}
+
+
+/* Education section */
+.experience-output {
+  margin-top: 20px;
+  color: #ccc;
+  font-size: 16px;
+}
+
+.experience-output p {
+  margin: 3px 0;
+}
+
+.experience-output h4 {
+  color: #00FF7F;
+  margin-bottom: 0;
+}
+
+/* Skills section */
+.experience-output {
+  margin-top: 20px;
+  color: #ccc;
+  font-size: 16px;
+}
+
+.experience-output strong {
+  color: #00FF7F;
+  font-size: 17px;
+}
+
+.experience-output p {
+  margin: 3px 0;
+}
+
+/* Projects section */
+.section-entry {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  background-color: #121212;
+}
+
+.section-entry p {
+  margin: 5px 0;
+  color: #e0e0e0;
+  font-size: 16px;
+}
+
+.section-entry strong {
+  color: #00ff00;
+}
+
+.section-entry a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.section-entry a:hover {
+  text-decoration: underline;
+}
+
+.command-output p {
+  color: #e0e0e0;
+  font-size: 16px;
+}
+
+.command-output strong {
+  color: #00ff00;
+}
+
+/* About section */
+.about-output p{
+  color: #ccc;
+}
